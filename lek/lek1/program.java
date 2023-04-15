@@ -1,4 +1,4 @@
-package lek.lek1.java_projects;
+package lek.lek1;
 
 /**
  * program
