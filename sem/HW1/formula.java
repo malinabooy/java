@@ -7,11 +7,12 @@ import java.util.Scanner;
 public class formula {
     public static void main(String[] args) {
         //Работает только для уравнений вида ?2 + 5? = 69, где неизвестно 1 и 4 число.
+        System.out.println("Работает только для уравнений вида ?2 + 5? = 69, где неизвестно 1 и 4 число.");
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("Введите первое число: ");
+        System.out.printf("Введите вторую цифру: ");
         int numOne = scanner.nextInt();
 
-        System.out.printf("Введите второе число: ");
+        System.out.printf("Введите третью цифру: ");
         int numTwo = scanner.nextInt();
 
         System.out.printf("Введите чему равно: ");
@@ -26,6 +27,7 @@ public class formula {
         for (q = 0; q <= 9; q++) {
             for (w = 0; w <= 9; w++) {
                 // проверяем, является ли e равной q + w, учитывая знаки вопроса
+                //У класса String есть статический метод format(): он позволяет задать шаблон объединения строки с данными.
                 String eq = String.format("%d%d + %d%d = %d", numOne, q, w, numTwo, e);
                 if (eval(eq)) {
                     System.out.println("Решение: " + eq);
@@ -36,14 +38,14 @@ public class formula {
         
         System.out.println("Решение не найдено");
     }
-    
+
     // метод для вычисления значения выражения
     public static boolean eval(String expr) {
         String[] parts = expr.split(" ");
+        // преобразуем строку в число.
         int x = Integer.parseInt(parts[0]);
         int y = Integer.parseInt(parts[2]);
         int z = Integer.parseInt(parts[4]);
         return x + y == z;
     }
 }
-
