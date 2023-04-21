@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class formula {
     public static void main(String[] args) {
         //Работает только для уравнений вида ?2 + 5? = 69, где неизвестно 1 и 4 число.
-        System.out.println("Работает только для уравнений вида ?2 + 5? = 69, где неизвестно 1 и 4 число.");
+        System.out.println("Работает только для уравнений вида 2? + ?5 = 69, где неизвестно 2 и 3 число.");
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Введите первую цифру: ");
         int numOne = scanner.nextInt();
@@ -19,7 +19,7 @@ public class formula {
         int numResult = scanner.nextInt();
         scanner.close();
 
-        // задаем уравнение
+        // задаем неизвестные переменные для перебора
         int numTwo, numThree;
   
         // перебираем все возможные значения для numTwo и numThree
