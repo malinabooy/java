@@ -1,1 +1,1 @@
-{"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"18"}
+{"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
