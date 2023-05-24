@@ -17,9 +17,49 @@ public class MainFun {
         notebooks.add(new Notebook("Asus ROG Strix", 32, 1024, "Linux", "Black"));
 
         Map<Integer, Object> filters = new HashMap<>();
-        filters.put(1, 8); // ОЗУ: минимальное значение 8 GB
-        filters.put(3, "Windows 10"); // Операционная система: Windows 10
-        filters.put(2, 256); // Память ЖД: минимальное значение 8 GB
+        Scanner scanner = new Scanner(System.in);
+
+        int criterion;
+        do {
+            System.out.print("Введите цифру, соответствующую необходимому критерию:\n" +
+                    "1 - ОЗУ\n" +
+                    "2 - Объём ЖД\n" +
+                    "3 - Операционная система\n" +
+                    "4 - Цвет\n" +
+                    "0 - Завершить ввод и выполнить фильтрацию\n");
+
+            criterion = scanner.nextInt();
+
+            switch (criterion) {
+                case 1:
+                    System.out.print("Введите минимальное значение ОЗУ (в GB): ");
+                    int minRam = scanner.nextInt();
+                    filters.put(1, minRam);
+                    break;
+                case 2:
+                    System.out.print("Введите минимальное значение объёма ЖД (в GB): ");
+                    int minStorage = scanner.nextInt();
+                    filters.put(2, minStorage);
+                    break;
+                case 3:
+                    System.out.print("Введите операционную систему: ");
+                    String os = scanner.next();
+                    filters.put(3, os);
+                    break;
+                case 4:
+                    System.out.print("Введите цвет: ");
+                    String color = scanner.next();
+                    filters.put(4, color);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Некорректный выбор критерия.");
+                    break;
+            }
+        } while (criterion != 0);
+
+        scanner.close();
 
         List<Notebook> filteredNotebooks = Notebook.filterNotebooks(notebooks, filters);
 
