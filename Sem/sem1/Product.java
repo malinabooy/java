@@ -2,10 +2,10 @@ package Sem.sem1;
 
 public class Product {
 
-    private String name;
-    private String brand;
+    protected String name;
+    protected String brand;
 
-    private double price;
+    protected double price;
 
     public double getPrice() {
         return price;
