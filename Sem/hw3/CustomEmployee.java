@@ -4,7 +4,7 @@ public class CustomEmployee extends Employee {
 
 
     public CustomEmployee(String name, String surname, int age, double salary) {
-        super(name, surname, age, salary);
+        super(name, surname, age, 2 * salary);
 
     }
 

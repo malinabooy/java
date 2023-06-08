@@ -26,10 +26,10 @@ public class Program {
             return new Worker(names[random.nextInt(10)], surnames[random.nextInt(10)], age, salary);
         }
         if(employeeType == 1) {
-            return new Freelancer(names[random.nextInt(10)], surnames[random.nextInt(10)], age, 0.8 * salary);
+            return new Freelancer(names[random.nextInt(10)], surnames[random.nextInt(10)], age, salary);
         }
         else {
-            return new CustomEmployee(names[random.nextInt(10)], surnames[random.nextInt(10)], age, 2 * salary);
+            return new CustomEmployee(names[random.nextInt(10)], surnames[random.nextInt(10)], age, salary);
         }
     }
 
