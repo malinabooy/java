@@ -4,13 +4,13 @@ public class CustomEmployee extends Employee {
 
 
     public CustomEmployee(String name, String surname, int age, double salary) {
-        super(name, surname, age, 2 * salary);
+        super(name, surname, age, salary);
 
     }
 
     @Override
     public double calculateSalary() {
-        return getSalary(); 
+        return 6 * salary; 
     }
 
     @Override

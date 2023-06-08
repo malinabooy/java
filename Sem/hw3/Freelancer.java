@@ -7,12 +7,12 @@ package Sem.hw3;
 public class Freelancer extends Employee{
     
     public Freelancer(String name, String surname, int age, double salary) {
-        super(name, surname, age, 0.8 * salary);
+        super(name, surname, age, salary);
     }
 
     @Override
     public double calculateSalary() {
-        return salary;
+        return 0.8 * salary;
     }
 
     @Override
