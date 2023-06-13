@@ -50,12 +50,10 @@ public class Program {
         System.out.println("Вес 2-ой коробки Яблок: " + appleBox2.getWeight());
         System.out.println("Вес коробки Апельсинов: " + orangeBox.getWeight());
 
-
         System.out.println();
         WeightComparator weightComparator = new WeightComparator<>();
         System.out.println("Сравним 1-ую и 2-ую коробки Яблок: ");
         weightComparator.compare(appleBox1, appleBox2);
-
 
         System.out.println();
         Box<Apple> appleBox3 = new Box<>();
@@ -67,7 +65,7 @@ public class Program {
         System.out.println("Вес 2-ой коробки Яблок до перемещения: " + appleBox2.getWeight());
 
         appleBox2.transferFruitsTo(appleBox3);
-;
+        
 
         System.out.println();
         System.out.println("Вес 3-ей коробки Яблок после перемещения: " + appleBox3.getWeight());
@@ -78,6 +76,6 @@ public class Program {
         System.out.println(appleBox3.getWeight());
         System.out.println(orangeBox.getWeight());
         weightComparator.compare(appleBox3, orangeBox);
+           
     }
 }
-
