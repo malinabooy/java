@@ -1,8 +1,8 @@
-package ru.geekbrains.lesson5;
+package Sem.hw5;
 
-import ru.geekbrains.lesson5.models.TableModel;
-import ru.geekbrains.lesson5.presenters.BookingPresenter;
-import ru.geekbrains.lesson5.views.BookingView;
+import Sem.hw5.models.TableModel;
+import Sem.hw5.presenters.BookingPresenter;
+import Sem.hw5.views.BookingView;
 
 import java.util.Date;
 

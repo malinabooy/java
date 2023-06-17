@@ -1,6 +1,6 @@
-package ru.geekbrains.lesson5.presenters;
+package Sem.hw5.presenters;
 
-import ru.geekbrains.lesson5.models.Table;
+import Sem.hw5.models.Table;
 
 import java.util.Collection;
 
