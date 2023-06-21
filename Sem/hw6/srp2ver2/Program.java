@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson6.srp2.srp2ver2;
+package Sem.hw6.srp2ver2;
 
 public class Program {
     public static void main(String[] args) {

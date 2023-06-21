@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson6.srp2;
+package Sem.hw6;
 
 import java.util.Scanner;
 

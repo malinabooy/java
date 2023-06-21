@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson6.srp2.srp2ver2;
+package Sem.hw6.srp2ver2;
 
 import java.io.FileWriter;
 import java.io.IOException;
